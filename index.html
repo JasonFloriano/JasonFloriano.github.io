@@ -59,7 +59,7 @@ img.logo {
   margin: 6px auto 10px auto;
 }
 .company-logo {
-  width: 200px;          /* adjust if needed */
+  width: 200px;
   max-width: 80%;
   height: auto;
   margin: 12px auto 6px auto;
@@ -70,6 +70,7 @@ img.logo {
 @media (prefers-color-scheme: dark) {
   .company-logo {
     content: url("CoreAndMain_Logo_Dark.png");
+    padding: 6px;
   }
 }
 a.btn:hover {
@@ -84,8 +85,9 @@ a.btn:active {
 <body>
 <div class="card">
 <img src="Jason_Floriano_Headshot_600.jpg" class="profile" alt="Jason Floriano">
-<img src="CoreAndMain_Logo_Dark.png" class="company-logo" alt="Core & Main Logo">
-<img src="CoreAndMain_Logo_Light.png" class="company-logo"alt="Core & Main Logo">
+<img src="CoreAndMain_Logo_Light.png"
+     class="company-logo"
+     alt="Core & Main Logo">
 <h2>Jason Floriano</h2>
 <p><strong>Branch Manager</strong></p>
 <a class="btn" href="Jason_Floriano_CoreAndMain.vcf">Add to Contacts</a>
