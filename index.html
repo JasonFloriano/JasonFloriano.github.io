@@ -11,10 +11,18 @@ body {
   background: #f5f5f5;
   color: #111;
 }
+  * {
+  box-sizing: border-box;
+}
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #111;
     color: #fff;
+  }
+}
+@media (max-width: 480px) {
+  a.btn {
+    padding: 14px 16px;
   }
 }
 .card {
