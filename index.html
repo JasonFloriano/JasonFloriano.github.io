@@ -86,17 +86,24 @@ a.btn:active {
   transform: translateY(0);
 }
 .address-link {
-    display: block;               /* make it a block so it sits on its own line */
-    text-align: center;           /* center the text */
+    display: block;
+    text-align: center;
     text-decoration: none;
-    color: #111;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.4;
     padding: 6px 8px;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s;
-    margin: 12px auto;            /* adds spacing above/below and centers block */
+    margin: 12px auto;
+    color: #111; /* default for light mode */
+}
+
+/* Dark mode text color */
+@media (prefers-color-scheme: dark) {
+  .address-link {
+    color: #fff; /* white text for dark background */
+  }
 }
 
 .address-link:hover {
