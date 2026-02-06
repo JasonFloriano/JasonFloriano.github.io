@@ -86,21 +86,23 @@ a.btn:active {
   transform: translateY(0);
 }
 .address-link {
-    display: inline-block;       /* treat it like a block but allow inline placement */
-    text-decoration: none;       /* remove underline */
-    color: #111;              
+    display: block;               /* make it a block so it sits on its own line */
+    text-align: center;           /* center the text */
+    text-decoration: none;
+    color: #111;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.4;
     padding: 6px 8px;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s;
-  }
+    margin: 12px auto;            /* adds spacing above/below and centers block */
+}
 
-  .address-link:hover {
-    background-color: #e8f0fe;  /* subtle highlight on hover */
-    color: #174ea6;             /* darker blue on hover */
-  }
+.address-link:hover {
+    background-color: #e8f0fe;
+    color: #174ea6;
+}
 </style>
 </head>
 <body>
@@ -118,7 +120,8 @@ a.btn:active {
 <a class="btn" href="https://www.coreandmain.com">Website</a>
 <a href="https://maps.app.goo.gl/v9Nqgnziq84cEkfi8" target="_blank" class="address-link">
   610 Young St<br>
-  Santa Ana, CA 92705</a>
+  Santa Ana, CA 92705
+</a>
 <img src="assets/Jason_Floriano_QR.png" width="200" alt="Scan to save Jason Floriano contact">
 </div>
 </body>
